@@ -1,0 +1,14 @@
+<div class="main">
+	<table>
+		<tr>
+			<th>URL</th>
+			<th>Clicked</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td> <%= "#{request.base_url}/#{@link.short}"%> </td>
+			<td> <%= @link.clicked%></td>
+			<td> <%= link_to "Make Expire", make_expire_home_index_path(:id => @link.id)%></td>
+		</tr>
+	</table>
+</div>
